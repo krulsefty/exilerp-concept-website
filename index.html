@@ -1,0 +1,201 @@
+<!--- sefty --->
+<!-- sefty -->
+<!--- sefty --->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ExileRP Concept Website by sefty</title>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon"
+    href="https://cdn.discordapp.com/avatars/1064407842045558845/c5a1aab6f4f713442e6c8d2845f46143.png" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script defer src="js/app.js"></script>
+</head>
+
+<body>
+
+  <div class="color" id="yellow"></div>
+  <div class="color" id="blue"></div>
+  <div class="color" id="white"></div>
+
+  <main>
+
+    <!-- <div id="popup">
+      <p>Wciśnij <span id="keycap">J</span> aby dołączyć do serwera 😎</p>
+    </div> -->
+
+    <input type="checkbox" id="toggle">
+
+    <header id="header">
+      <div id="header-left">
+        <img src="https://cdn.discordapp.com/avatars/1064407842045558845/c5a1aab6f4f713442e6c8d2845f46143.png"
+          id="logo">
+        <a href="https://indrop.eu/s/exilerp" target="_blank">Sklep</a>
+        <a>ChangeLog</a>
+        <a>Regulamin</a>
+      </div>
+      <div id="header-right">
+        <a id="dclogo" class="fa-brands fa-discord" id="icon"></a>
+        <a id="dclogo" class="fa-brands fa-tiktok" id="icon"></a>
+        <a id="dclogo" class="fa-brands fa-youtube" id="icon"></a>
+        <label id="theme-switch" for="toggle">
+          <div id="circle" class="circle">
+              <svg id="sun" class="sun themeSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+              </svg>
+              <svg id="moon" class="moon themeSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+              </svg>                               
+          </div>
+      </label>        
+      </div>
+    </header>
+
+    <section class="first">
+      <div id="text-container">
+        <h1 id="title">To <span class="colored-text">więcej niż gra</span>, to świat bez granic wyobraźni!</h1>
+        <h2 id="desc" class="darker-text">Twórz, odkrywaj oraz baw się w wyjątkowej społeczności pełnej pasji i
+          kreatywności. Czeka na ciebie niezapomniana przygoda, jakiej jeszcze nie doświadczyłeś. Dołącz już dziś i stań
+          się częścią czegoś niezwykłego!
+        </h2>
+        <div id="buttons">
+          <button onclick="buttonRedirect('https://discord.gg/exilegg')" id="discord"><a class="fa-brands fa-discord"
+              id="icon"></a>Discord</button>
+          <button onclick="buttonRedirect()" id="play-now"><a class="fa-solid fa-plane" id="icon"></a>Zagraj
+            teraz</button>
+        </div>
+        <div id="video-container">
+          <img id="arrow" src="files/trailer-serwera.png">
+          <h2 id="trailer-label">Obejrzyj nasz trailer!</h2>
+          <iframe id="trailer" width="885" height="500"
+            src="https://www.youtube.com/embed/O6WMogOdmrg?si=_P_ohs_2rTfIEfBh" title="ExileRP Trailer" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="second">
+      <div id="text-container">
+        <h1 id="title" class="rem3">Cechy <span class="colored-text">ExileRP</span></h1>
+        <div class="grid-container">
+          <div class="grid-item hidden">
+            <p class="grid-title"><a class="fa-solid fa-star" id="icon"></a>Doświadczenie</p>
+            <p class="grid-desc">Tworzymy przestrzeń dla graczy już od 2018 roku, czerpiąc z bogatego doświadczenia,
+              które pozwala nam budować miejsce przyjazne każdemu miłośnikowi gry.</p>
+          </div>
+          <div class="grid-item hidden">
+            <p class="grid-title"><a class="fa-solid fa-users" id="icon"></a>Community</p>
+            <p class="grid-desc">Nasza społeczność to wyjątkowa mieszanka lojalnych weteranów i entuzjastycznych
+              nowicjuszy. Z otwartymi ramionami witamy wszystkich, niezależnie od stylu gry.</p>
+          </div>
+          <div class="grid-item hidden">
+            <p class="grid-title"><a class="fa-solid fa-paper-plane" id="icon"></a>Częste aktualizacje</p>
+            <p class="grid-desc">Stawiamy na nowoczesność! Dzięki regularnym aktualizacjom nasz serwer zawsze nadąża za
+              najnowszymi technologiami, by dostarczać najwyższą jakość rozgrywki.</p>
+          </div>
+          <div class="grid-item hidden">
+            <p class="grid-title"><a class="fa-solid fa-chart-simple" id="icon"></a>Optymalizacja</p>
+            <p class="grid-desc">Dbamy o to, aby każdy gracz mógł cieszyć się płynną rozgrywką, niezależnie od
+              możliwości swojego sprzętu. U nas liczy się jakość gry, a nie moc komputera.</p>
+          </div>
+          <div class="grid-item hidden">
+            <p class="grid-title"><a class="fa-solid fa-address-card" id="icon"></a>Wyszkolona Administracja</p>
+            <p class="grid-desc">Nasza administracja to zespół profesjonalistów, którzy dzięki starannemu szkoleniu są
+              gotowi sprostać każdemu wyzwaniu i zapewnić najwyższy poziom moderacji.</p>
+          </div>
+          <div class="grid-item hidden">
+            <p class="grid-title"><a class="fa-solid fa-sack-dollar" id="icon"></a>Rozbudowana ekonomia</p>
+            <p class="grid-desc">Rozwinęliśmy innowacyjny system ekonomiczny, który pozwala graczom nie tylko rozwijać
+              swoje postacie, ale także uczestniczyć w zróżnicowanych i wciągających interakcjach.</p>
+          </div>
+        </div>
+        </h2>
+      </div>
+
+    </section>
+
+    <section>
+        <h1 id="title" class="hidden">Jak <span class="colored-text">zacząć gre</span> na serwerze</h1>
+        <h2 id="desc" class="hidden">Aby rozpocząć gre na serwerze wystarczą tylko 2 kroki.</h2>
+        <br><br><br><br>
+
+        <div class="tutorial-grid">
+          <div class="tutorial-item">
+            <p class="tutorial-step">1 Krok</p>
+            <p class="tutorial-title">Zainstaluj FiveM</p>
+            <p class="tutorial-desc">Pobierz FiveM i przygotuj się do rozgrywki! Pamiętaj, że potrzebujesz aktywnej licencji na Grand Theft Auto V, by rozpocząć swoją grę.</p>
+            <button onclick="buttonRedirect('https://fivem.net')" id="tutorial-download" class="tutorial-button"><a class="fa-solid fa-download"
+              id="icon"></a>Pobierz</button>
+          </div>
+
+          <div class="tutorial-item">
+            <p class="tutorial-step">2 Krok</p>
+            <p class="tutorial-title">Wejdź na Discord</p>
+            <p class="tutorial-desc">Dołącz do naszego serwera Discord, połącz FiveM z swoim kontem Discord. Na końcu połącz się z serwerem i wskocz do gry bez zbędnej zwłoki!</p>
+            <button onclick="buttonRedirect('https://discord.gg/exilegg')" id="tutorial-discord" class="tutorial-button"><a class="fa-brands fa-discord"
+              id="icon"></a>Discord</button>
+          </div>
+
+        </div>
+    </section>
+
+    <section id="cards-container">
+      <h1 id="title" class="hidden">Zespół <span class="colored-text">Exile</span></h1>
+      <br><br><br><br>
+
+      <div id="cards">
+        <div class="card hidden">
+          <img src="https://cdn.discordapp.com/avatars/605825732895309845/a_48a45b6cf3527fa93a3aa7ee981f3271.gif?size=2048" id="avatar">
+          <p id="username">Klauducha</p>
+          <p id="role">Owner</p>
+        </div>
+        <div class="card hidden">
+          <img src="https://cdn.discordapp.com/avatars/290280363660410881/a_3bea9ee9cfc20799a21a2f4b7202ff43.gif?size=2048" id="avatar">
+          <p id="username">KrzychuBaza</p>
+          <p id="role">Właściciel</p>
+        </div>
+        <div class="card hidden">
+          <img src="https://cdn.discordapp.com/avatars/313701223419346946/a_1b8e4f533ed33d06e86f192bb5d9d179.gif?size=2048" id="avatar">
+          <p id="username">Dz1kusek</p>
+          <p id="role">Lead Developer</p>
+        </div>
+        <div class="card hidden">
+          <img src="https://cdn.discordapp.com/avatars/783956289101365249/fa76a5444aa9bcdc564445e0f8abb6f5.webp?size=2048" id="avatar">
+          <p id="username">sefty</p>
+          <p id="role">Web Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+      <h1 id="footer-title" class="colored-text">ExileRP</h1>
+      <div id="footer-container">
+        <div id="footer-desc-top">
+          <a id="dclogo" href="https://discord.gg/exilegg" target="_blank" class="fa-brands fa-discord" id="icon"></a>
+          <a id="dclogo" class="fa-brands fa-tiktok" id="icon"></a>
+          <a id="dclogo" class="fa-brands fa-youtube" id="icon"></a>
+        </div>
+        <ul id="footer-desc-bottom">
+          <li><a href="indrop.eu/s/exilerp" target="_blank">Sklep</li>
+          <li>ChangeLog</li>
+          <li>Regulamin</li>
+          <br>
+          <li>Website made by <a class="colored-text" href="https://fentanyl.recipes" target="_blank">sefty</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div id="gap-fill"></div>
+  </main>
+
+</body>
+
+</html>
