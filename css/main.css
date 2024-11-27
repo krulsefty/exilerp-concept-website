@@ -8,33 +8,33 @@
 @import url('https://fonts.googleapis.com/css?family=Bricolage+Grotesque&display=swap');
 
 :root {
-  --base-color: #0b0c0e;
-  --base-variant: #141318;
-  --header-background: #0f1013e8;
-  --button-background: #1c1a25;
-  --primary-text: #ffffff;
-  --secondary-text: rgba(255, 255, 255, 0.589);
-  --tertiary-text: rgba(255, 255, 255, 0.4);
+  --base-color: hsl(220, 12%, 5%);
+  --base-variant: hsl(220, 12%, 10%);
+  --items-background: hsl(220, 12%, 7%, 0.9);
+  --button-background: hsl(220, 12%, 15%);
+  --primary-text: hsl(0, 0%, 90%);
+  --secondary-text: hsl(0, 0%, 60%);
+  --tertiary-text: hsl(0, 0%, 30%);
   --first-gradient: #59db7a;
   --second-gradient: #4e6fcc;
-  --blue-gradient: rgba(0, 119, 255, 0.05);
-  --green-gradient: rgba(0, 255, 115, 0.065);
-  --shadow-color: rgba(255, 255, 255, 0.1);
+  --blue-gradient: rgba(0, 119, 255, 0.075);
+  --green-gradient: rgba(0, 255, 115, 0.1);
+  --shadow-color: hsl(0, 0%, 30%);
 }
 
 .light-mode {
-  --base-color: #e7e7e7;
-  --base-variant: #c9c9c9;
-  --header-background: #e4e4e4cc;
-  --button-background: #727272;
-  --primary-text: #161616;
-  --secondary-text: rgba(0, 0, 0, 1);
-  --tertiary-text: rgba(0, 0, 0, 0.75);
+  --base-color: hsl(220, 12%, 95%);
+  --base-variant: hsl(220, 12%, 90%);
+  --items-background: hsl(220, 12%, 93%, 0.9);
+  --button-background: hsl(220, 12%, 15%);
+  --primary-text: hsl(0, 0%, 10%);
+  --secondary-text: hsl(0, 0%, 40%);
+  --tertiary-text: hsl(0, 0%, 70%);
   --first-gradient: #59db7a;
   --second-gradient: #4e6fcc;
   --blue-gradient: rgba(0, 119, 255, 0);
   --green-gradient: rgba(0, 255, 115, 0);
-  --shadow-color: rgba(0, 0, 0, 0);
+  --shadow-color: hsl(0, 0%, 70%);
 }
 
 * {
@@ -60,7 +60,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   overflow-x: hidden;
-  transition: 50ms;
+  transition: 500ms;
 }
 
 a {
@@ -100,7 +100,7 @@ header {
 }
 
 .scrolled {
-  background: var(--header-background);
+  background: var(--items-background);
 }
 
 #header-left {
@@ -217,13 +217,13 @@ section {
 }
 
 .stat:first-child {
-  border-left: 1px var(--tertiary-text) solid;
-  border-right: 1px var(--tertiary-text) solid;
+  border-left: 1px var(--shadow-color) solid;
+  border-right: 1px var(--shadow-color) solid;
 }
 
 .stat:last-child {
-  border-left: 1px var(--tertiary-text) solid;
-  border-right: 1px var(--tertiary-text) solid;
+  border-left: 1px var(--shadow-color) solid;
+  border-right: 1px var(--shadow-color) solid;
 }
 /* 
 #popup {
@@ -276,7 +276,7 @@ section {
 }
 
 #arrow {
-  transition: filter 0.3s ease;
+  transition: filter 0.5s ease;
 }
 
 #trailer {
@@ -332,7 +332,7 @@ section {
 }
 
 #white {
-  background-image: radial-gradient(closest-side, rgba(255, 255, 255, 0.05), transparent);
+  background-image: radial-gradient(closest-side, rgba(255, 255, 255, 0.075), transparent);
   top: -100%;
   height: 2000px;
   width: 2000px;
@@ -381,8 +381,8 @@ section {
 }
 
 .tutorial-item {
-  border: 1px solid var(--button-background);
-  background: var(--header-background);
+  border: 1px solid var(--shadow-color);
+  background: var(--items-background);
   padding: 5rem;
   text-align: center;
   height: 24rem;
@@ -445,7 +445,8 @@ section {
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
-  border: 1px solid var(--tertiary-text);
+  border: 1px solid var(--shadow-color);
+  background: var(--items-background);
   padding: 2rem 3rem;
   border-radius: 15px;
   cursor: pointer;
@@ -467,7 +468,7 @@ label {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  transition: all 0.2s ease-in;
+  transition: all 0.5s ease-in;
   color: var(--primary-text);
   z-index: 1001;
 }
@@ -513,7 +514,7 @@ footer {
   color: var(--primary-text);
   width: 100vw;
   height: 40vh;
-  background: var(--header-background);
+  background: var(--items-background);
   font-family: Bricolage Grotesque;
   display: flex;
   flex-direction: row;
@@ -553,7 +554,7 @@ footer {
 #gap-fill {
   width: 100%;
   height: 10rem;
-  background-color: var(--header-background);
+  background: var(--items-background);
 }
 
 .hidden {
