@@ -52,9 +52,6 @@ body {
   color: var(--primary-text);
   background-color: var(--base-color);
   background: conic-gradient(from 90deg at 1px 1px, var(--base-color) 90deg, var(--base-variant) 0) 0 0/75px 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   margin: 0;
   padding-top: 40px;
@@ -510,10 +507,9 @@ label {
 footer {
   position: relative;
   left: 0;
-  bottom: 0;
+  bottom: -12em;
   color: var(--primary-text);
   width: 100vw;
-  height: 40vh;
   background: var(--items-background);
   font-family: Bricolage Grotesque;
   display: flex;
