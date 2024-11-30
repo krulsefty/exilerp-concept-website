@@ -2,9 +2,7 @@
 /* sefty */
 /** sefty **/
 
-@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Unbounded&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bricolage+Grotesque&display=swap');
 
 :root {
@@ -141,7 +139,7 @@ section {
 }
 
 #buttons {
-  font-family: Inter;
+  font-family: Bricolage Grotesque;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -415,7 +413,7 @@ section {
   border-radius: 15px;
   cursor: pointer;
   font-size: 1.25rem;
-  font-family: Inter;
+  font-family: Bricolage Grotesque;
   display: flex;
   flex-direction: row;
   justify-content: center;
